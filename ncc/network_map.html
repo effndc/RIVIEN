@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Example Network Map</title>
+</head>
+
+<body link="#000000" alink="#000000" vlink="#000000">
+
+<br>
+
+<h2>Example Network Map</h2>
+
+<p>Strict ARIN address policies dictate that we keep records on how customer addresses are being used. 
+It is imperative that you submit a descriptive network map.  Below are examples of good and bad network maps.
+
+<p>
+
+
+<h3>Bad</h3>
+<pre>
+This is a poor network map.
+
+router-----+- Fannie - IBM PC
+           |
+           +- Mike - printer
+	   |		
+           +- network printer
+
+</pre>
+
+<h3>Good</h3>
+
+<pre>
+This is a detailed network map.
+
+current allocation:	14 addresses
+needed: 		additional 16
+
+Rivien--------router--+---Public network 
+       (200.181.200.1)|   file server (64.181.200.3)
+                      |   10 PCs using DHCP (64.181.200.4)
+                      |   web, mail, and news server (.5)
+                      |   5 PCs with discrete addresses (.6-.10)
+                      |   planned expansion: 16 more workstations being added
+                      |    (5 with discrete addresses)
+                      |
+                      +---Dial network
+                      |   access server for remote clients (64.181.200.10-13)
+                      |   planned expansion: adding capacity for 8 more remote
+                      |    clients
+                      |
+               Proxy Firewall (200.181.64.2)
+                      |
+                      +---Private network (using RFC 1918 addresses--10.0.0.0)
+
+</pre>
+
+
+</body>
+</html>

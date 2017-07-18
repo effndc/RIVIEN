@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Customer Policies</title>
+</head>
+
+<body link="#000000" alink="#000000" vlink="#000000">
+
+<h1>Customer Policies</h1>
+
+<p>
+<h3>BGP policy</h3>
+<ul>
+<li>Customers must announce the largest possible aggregates of their netblocks.
+<li>Netblocks must already be announced in the global routing table by another provider.
+<li>Customers whose netblocks are shown in the whois.arin.net registry as being owned by another provider must submit a Letter of Authority (LOA) from that provider authorizing Rivien to announce their addresses on the global internet.
+<li>Customers must have their own globally-routable ASNs.  Autonomous System Numbers are provided by <a href="http://www.arin.net/regserv.html">ARIN</a>.
+<li>We will not accept netblocks that cannot be routed globally.  These blocks are specified in RFC 1918: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.
+<li>Customers are responsible for doing their own traffic shaping.
+<li>DSL customers will not run BGP.
+</ul>
+
+<p>
+<h3>IP allocation policy</h3>
+<ul>
+<li>Customers must utilize IP addresses as efficiently as possible.  The necessity of address conservation is described in RFC 2050, which has guided this policy.
+<li>Currently the access devices of DSL customers will be configured not to need public IP addresses.
+<li>T1 and larger customers will be given a /29 (6 usable addresses) by default.
+<li>T1 and larger customers requiring a netblock larger than /29 must submit a detailed network map describing the number of addresses needed, where on the network they will be used, and what they will be used for.
+<li>After the initial allocation, customers requiring more addresses must provide an updated network map describing current utilization of all ip addresses, and how new addresses will be used. 
+Additionally, customers must have inverse DNS addressing in place for their currently assigned netaddresses, and they must show utilization of 80% of their currently assigned addresses, which we will verify using ping.
+<li>Rivien reserves the right to periodically assess a customer's address use by pinging their network, and adjusting their address assignment if they are under-utilizing their assigned space.
+</ul>
+
+
+</body>
+</html>
